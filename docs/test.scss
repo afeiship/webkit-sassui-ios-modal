@@ -37,6 +37,7 @@ button{
   transform: translate(-50%,-50%);
   position: fixed;
 
+  width: 80%;
 
   &[data-type=alert]{
     >.ft{

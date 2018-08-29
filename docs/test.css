@@ -3,7 +3,7 @@
   font-family: -apple-system,"Helvetica Neue",Roboto,sans-serif;
   border-radius: 13px;
   overflow: hidden;
-  width: 75%;
+  width: 100%;
   background-color: #f8f8f8;
   text-align: center;
 }
@@ -14,22 +14,6 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-.webkit-sassui-ios-modal[data-type=alert] > .ft button {
-  width: 100%;
-}
-
-.webkit-sassui-ios-modal[data-type=confirm] > .ft {
-  display: flex;
-}
-
-.webkit-sassui-ios-modal[data-type=confirm] > .ft button {
-  flex: 1;
-}
-
-.webkit-sassui-ios-modal[data-type=confirm] > .ft button + button {
-  border-left: 0.55px solid #dbdbdf;
 }
 
 .webkit-sassui-ios-modal > .hd {
@@ -97,4 +81,21 @@ button:focus {
   top: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
+  width: 80%;
+}
+
+.test-webkit-sassui-ios-modal[data-type=alert] > .ft button {
+  width: 100%;
+}
+
+.test-webkit-sassui-ios-modal[data-type=confirm] > .ft {
+  display: flex;
+}
+
+.test-webkit-sassui-ios-modal[data-type=confirm] > .ft button {
+  flex: 1;
+}
+
+.test-webkit-sassui-ios-modal[data-type=confirm] > .ft button + button {
+  border-left: 0.55px solid #dbdbdf;
 }

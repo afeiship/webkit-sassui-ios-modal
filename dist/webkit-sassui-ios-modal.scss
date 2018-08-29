@@ -1,12 +1,15 @@
 /*webkit-sassui-ios-modal Start*/
 $webkit-sassui-ios-modal-options:(
+  width: 100%,
 )!default;
 
 .webkit-sassui-ios-modal{
+  $width: map-get($map: $webkit-sassui-ios-modal-options, $key: width);
+
   font-family: -apple-system,"Helvetica Neue",Roboto,sans-serif;
   border-radius: 13px;
   overflow: hidden;
-  width: 75%;
+  width: $width;
   background-color: #f8f8f8;
   text-align: center;
 
