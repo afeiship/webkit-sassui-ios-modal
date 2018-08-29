@@ -17,9 +17,13 @@
 }
 
 .webkit-sassui-ios-modal > .hd {
-  padding: 14px 16px;
+  padding: 14px 16px 0;
   font-size: 17px;
   font-weight: 600;
+}
+
+.webkit-sassui-ios-modal > .hd + .ft {
+  margin-top: 14px;
 }
 
 .webkit-sassui-ios-modal > .bd {
