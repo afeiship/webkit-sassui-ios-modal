@@ -1,0 +1,100 @@
+/*webkit-sassui-ios-modal Start*/
+.webkit-sassui-ios-modal {
+  font-family: -apple-system,"Helvetica Neue",Roboto,sans-serif;
+  border-radius: 13px;
+  overflow: hidden;
+  width: 75%;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.webkit-sassui-ios-modal,
+.webkit-sassui-ios-modal > * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.webkit-sassui-ios-modal[data-type=alert] > .ft button {
+  width: 100%;
+}
+
+.webkit-sassui-ios-modal[data-type=confirm] > .ft {
+  display: flex;
+}
+
+.webkit-sassui-ios-modal[data-type=confirm] > .ft button {
+  flex: 1;
+}
+
+.webkit-sassui-ios-modal[data-type=confirm] > .ft button + button {
+  border-left: 0.55px solid #dbdbdf;
+}
+
+.webkit-sassui-ios-modal > .hd {
+  padding: 14px 16px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.webkit-sassui-ios-modal > .bd {
+  font-size: 13px;
+  padding: 12px 16px;
+}
+
+.webkit-sassui-ios-modal > .ft button {
+  height: 44px;
+  border-top: .55px solid #dbdbdf;
+  font-size: 17px;
+  color: #488aff;
+  background-color: transparent;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.webkit-sassui-ios-modal > .ft button:active {
+  opacity: .4;
+}
+
+/*webkit-sassui-ios-modal End*/
+.blank {
+  height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button {
+  border: none;
+  background: #007aff;
+  padding: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #fff;
+}
+
+.button.btn-green {
+  background: #4cd964;
+}
+
+.test-webkit-sassui-ios-modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}

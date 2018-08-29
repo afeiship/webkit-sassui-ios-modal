@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>webkit-sassui-ios-modal</title>
+  <link rel="stylesheet" href="./test.css">
+</head>
+
+<body ontouchstart="">
+
+  <div class="blank"></div>
+
+  <div id="modal1" data-type="alert" class="webkit-sassui-ios-modal test-webkit-sassui-ios-modal" hidden>
+    <div class="hd">
+      New Friend!
+    </div>
+    <div class="bd" id="modal-msg-13">Your friend, Obi wan Kenobi, just approved your friend request!</div>
+    <div class="ft">
+      <button id="close1">Ok</button>
+    </div>
+  </div>
+
+
+  <div id="modal3" data-type="alert" class="webkit-sassui-ios-modal test-webkit-sassui-ios-modal" hidden>
+    <div class="hd">
+      New Friend!
+    </div>
+    <div class="bd" id="modal-msg-13">Your friend, Obi wan Kenobi, just approved your friend request!</div>
+    <div class="ft">
+      <button id="close3">Ok</button>
+      <button>Cancel</button>
+    </div>
+  </div>
+
+  <button class="button btn-green" id="btnAlert">Set Type to Alert</button>
+  <button class="button btn-green" id="btnConfirm">Set Type to Confirm</button>
+
+  <button class="button" id="btn1">Show Standard modal</button>
+  <button class="button" id="btn3">Show modal with 3 actions</button>
+
+  <script>
+    var modal1 = document.getElementById('modal1');
+    var modal3 = document.getElementById('modal3');
+    var btn1 = document.getElementById('btn1');
+    var btn3 = document.getElementById('btn3');
+    var close1 = document.getElementById('close1');
+    var close3 = document.getElementById('close3');
+    var btnAlert = document.getElementById('btnAlert');
+    var btnConfirm = document.getElementById('btnConfirm');
+
+    btn1.onclick = function () {
+      modal1.removeAttribute('hidden');
+    }
+
+    btn3.onclick = function () {
+      modal3.removeAttribute('hidden');
+    }
+
+    close1.onclick = function () {
+      modal1.setAttribute('hidden', true);
+    }
+
+    close3.onclick = function () {
+      modal3.setAttribute('hidden', true);
+    }
+
+    btnAlert.onclick = function () {
+      modal1.setAttribute('data-type', 'alert');
+      modal3.setAttribute('data-type', 'alert');
+    }
+
+    btnConfirm.onclick = function () {
+      modal1.setAttribute('data-type', 'confirm');
+      modal3.setAttribute('data-type', 'confirm');
+    }
+
+
+  </script>
+
+</body>
+
+</html>
